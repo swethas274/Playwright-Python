@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Playwright
+test-results/
+playwright-report/
+*.png
+*.webm
+
+# Virtual env
+venv/
+.env
