@@ -23,3 +23,26 @@
 | `locator.focus()`         | place cursor         |
 | `locator.press()`         | press keyboard key   |
 | `locator.select_option()` | choose dropdown item |
+
+## Assertion commands
+
+### Page assertions
+| Command                                  | Human Meaning                         |
+| ---------------------------------------- | ------------------------------------- |
+| `expect(page).to_have_title()`           | page title matches expected value     |
+| `expect(page).to_have_url()`             | current page URL matches              |
+| `expect(page).to_have_url(re.compile())` | URL partially matches (pattern check) |
+
+### location assertions
+| Command                               | Human Meaning                  |
+| ------------------------------------- | ------------------------------ |
+| `expect(locator).to_be_visible()`     | element is visible on screen   |
+| `expect(locator).to_be_hidden()`      | element is not visible         |
+| `expect(locator).to_be_enabled()`     | element can be interacted with |
+| `expect(locator).to_be_disabled()`    | element is disabled            |
+| `expect(locator).to_be_checked()`     | checkbox/radio is selected     |
+| `expect(locator).to_have_text()`      | element text exactly matches   |
+| `expect(locator).to_contain_text()`   | element contains text          |
+| `expect(locator).to_have_value()`     | input field has value          |
+| `expect(locator).to_have_attribute()` | element contains attribute     |
+| `expect(locator).to_have_count()`     | number of matched elements     |
